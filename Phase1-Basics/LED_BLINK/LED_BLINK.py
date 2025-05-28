@@ -63,7 +63,7 @@ def traffic_light(redPin, bluePin, yellowPin):
         yellowLight.led_off()
         
 
-#traffic_light(redPin=2, bluePin=15, yellowPin=4)
+traffic_light(redPin=2, bluePin=15, yellowPin=4)
 
 
         
