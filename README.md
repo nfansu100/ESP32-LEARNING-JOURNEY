@@ -15,3 +15,4 @@ Welcome to my ESP32 embedded systems and AI learning path. This repository conta
 | [01_LED_Blink](Phase-1_Basics/01_LED_Blink) | Basic GPIO blinking |
 | [02_Button_LED_Control](Phase-1_Basics/02_Button_LED_Control) | Input reading from button |
 | [03_DHT11_OLED_Display](Phase-1_Basics/03_DHT11_OLED_Display) | Sensor + display integration |
+| [04 Ultasonic_Sensor](Pahse-1_Basics/04_ultasonic_Sensor) | Sensor + display integration |
