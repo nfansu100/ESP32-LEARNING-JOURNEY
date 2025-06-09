@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 WEB SERVER CONTROL</title>
+    <style>
+        body{background-color: hsl(0, 2%, 49%);font-family: sans-serif ;font-weight: bold;}
+        h1{color: rgb(0, 255, 255) ;text-align: center;text-shadow: 2px 2px 5px red;}
+        h1::first-letter{color: rgb(231, 163, 163) ;font-size: 2.5rem;}
+        form{width: 70% ;margin: auto ;text-align: center;border: none ;padding: 15px ;border-radius: 15px ;background-color: hsla(0, 1%, 35%, 0.904);}
+        form:hover{background-color: hsla(0, 1%, 70%, 0.904);box-shadow: 2px 2px 5px red;}
+        form h2{color: rgb(0, 149, 255) ;font-weight: bold;font-style: italic ;}
+        button{display: block ;margin: auto ;margin-bottom: 20px;font-size: 1.5rem;border: none ;
+              border-radius: 15px;padding: 10px 15px ;background-color: hsl(0, 2%, 75%); cursor: pointer ;}
+        button:hover{background-color: hsl(0, 2%, 30%); color: white ;}
+        button:active{background-color: hsl(0, 2%, 50%); }
+        #descriptionContainer{border: none; margin: auto ; width: 70%; margin-top: 30px; padding: 15px; text-align: center;
+                              background-color: white; border-radius: 15px; font-family:'Courier New';}
+        #descriptionContainer:hover{box-shadow: 0px 0px 7px red;}
+        #descriptionContainer .state{ color: red; font-weight: bold; font-size: 1.5rem;}
+    </style>
+</head>
+<body>
+
+    <h1>WELCOME TO MY ESP32 WEB SERVER MINI PROJECT</h1>
+
+    <form id="myForm" name="myForm">
+        <h2>CONTROLLING HARDWARE VIA INTERNET</h2>
+        <button name="led" value="greenOn" type="submit">GREEN LED ON</button>
+        <button name="led" value="greenOff" type="submit">GREEN LED OFF</button>
+        <button name="led" value="blueOn" type="submit">BLUE LED ON</button>
+        <button name="led" value="blueOff" type="submit">BLUE LED OFF</button>
+        <button name="led" value="yellowOn" type="submit">YELLOW LED ON</button>
+        <button name="led" value="yellowOff" type="submit">YELLOW LED OFF</button>
+        <button name="buzzer" value="buzzerOn" type="submit">TURN ON BUZZER</button>
+        <button name="buzzer" value="buzzerOff" type="submit">TURN OFF BUZZER</button>
+    </form>
+    
+    <div id="descriptionContainer">
+        <h3>Green Led is <span class="state">On</span></h3>
+        <h3>Blue Led is <span class="state">On</span></h3>
+        <h3>Yellow Led is <span class="state">On</span></h3>
+        <h3>The buzzer is  <span class="state">On</span></h3>
+    </div>
+</body>
+</html>

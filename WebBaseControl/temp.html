@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Sensor Display Via Web Server</title>
+    <style>
+        body{background-color: black;}
+        h1{color: hsl(139, 60%, 80%); text-shadow: 2px 2px 5px red; text-align: center;}
+        #readingContainer{background-color: white; width: 60%; margin: auto; padding: 15px; border: none; border-radius: 15px; text-align: center;}
+        #readingContainer:hover{ box-shadow: 3px 3px 7px red; background-color: hsl(0, 2%, 74%)}
+        .sensorValue{ color: green; font-size: 120%; font-style: italic; font-weight: bold;}
+        h3{ font-size: 160%;}
+    </style>
+</head>
+<body>
+    <h1>READING AND DISPLAYING TEMPERATURE OF DHT11</h1>
+    <div id="readingContainer">
+        <h3>The Temperature is <span class="sensorValue">0.00</span> &deg;C</h3>
+        <h3>The Humidity is <span class="sensorValue">0.00</span>%</h3>
+    </div>
+</body>
+</html>
